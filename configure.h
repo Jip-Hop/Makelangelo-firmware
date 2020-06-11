@@ -51,8 +51,8 @@
 // LCD panels supported
 //------------------------------------------------------------------------------
 
-#define HAS_LCD  // if you have an LCD panel
-#define HAS_SD   // if you have SD card support on your LCD panel (must be on panel?)
+// #define HAS_LCD  // if you have an LCD panel
+// #define HAS_SD   // if you have SD card support on your LCD panel (must be on panel?)
 
 // only uncomment one of these options
 //#define LCD_IS_128X64  // reprapdiscount Full Graphic Smart LCD Controller
@@ -71,7 +71,7 @@
 #define BOARD_SIXI_MEGA    6  // Arduino Mega + custom shield for Sixi 2 robot
 
 #ifndef MOTHERBOARD
-#define MOTHERBOARD BOARD_RUMBA  // change this
+#define MOTHERBOARD BOARD_RAMPS  // change this
 #endif
 
 #include "board_rumba.h"
@@ -100,7 +100,7 @@
 // note that some boards have dip switches or jumpers that can be activated to turn stepping on and off.
 // make sure your dip switch settings match the firmware value.
 #ifndef MICROSTEPS
-#define MICROSTEPS           (16.0)
+#define MICROSTEPS           (32.0)
 #endif
 
 // Marginallyclever.com uses GT2 timing belt, which has 2mm teeth.

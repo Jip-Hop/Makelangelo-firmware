@@ -17,7 +17,7 @@
 
 /// -------------- change here ----------------
 // change this line for your version
-#define MACHINE_HARDWARE_VERSION   MAKELANGELO_5
+#define MACHINE_HARDWARE_VERSION   MAKELANGELO_3_3
 
 // choose one of the following
 #define NORMAL_MOTOR_STEPS   200
@@ -77,8 +77,8 @@
 #if MACHINE_HARDWARE_VERSION == MAKELANGELO_3_3
 #define MAX_SEGMENTS         (16)  // has LCD, needs more ram.
 #define USE_LIMIT_SWITCH
-#define HAS_SD
-#define HAS_LCD
+// #define HAS_SD
+// #define HAS_LCD
 #endif
 
 extern void calibrateBelts();
